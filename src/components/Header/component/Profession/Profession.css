@@ -1,0 +1,28 @@
+* {
+  font-size: 24px;
+}
+
+.profession {
+  border-bottom: 1px solid black;
+}
+
+.blinking {
+  animation: blinking infinite 1000ms;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+/*# sourceMappingURL=Profession.css.map */

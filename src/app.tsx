@@ -1,16 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './style.css'
-import IMAGE from './assets/images.png'
+import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
-    const [count, setCount] = useState(0)
     return (
-        <div>
-            <h1>asdasdфывsdasda</h1>
-            <button onClick={() => {
-                setCount((c) => c + 1)
-            }}>Count - {count}</button>
-        </div>
+        <>
+            <Navigation/>
+            <Header/>
+            <Main/>
+            <Footer/>
+        </>
     )
 }
 

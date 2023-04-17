@@ -7,7 +7,7 @@ const Profession = () => {
         'UI-designer',
         'Freelancer',
     ]
-    const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const [currentWordIndex, setCurrentWordIndex] = useState<number>(0);
     const blink = useRef() as React.MutableRefObject<HTMLSpanElement>
     const timer = (ms:number) => new Promise(res => setTimeout(res, ms))
     async function writeProfession (index: number) {

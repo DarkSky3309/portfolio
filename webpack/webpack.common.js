@@ -19,14 +19,17 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                use: ['style-loader',
+                    {loader: "css-loader",
+                    },
+                ],
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
             },
             {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                test: /\.(woff(2)?|eot|ttf|otf|svg|webp)$/,
                 type: 'asset/inline',
             },
             {
@@ -35,10 +38,25 @@ module.exports = {
                     // Creates `style` nodes from JS strings
                     "style-loader",
                     // Translates CSS into CommonJS
-                    "css-loader",
+                    {loader: "css-loader",
+
+                    },
+
+
                     // Compiles Sass to CSS
                     "sass-loader",
                 ],
+            },
+            {
+                test: /\.(jpe?g|png)$/i,
+                use: [
+                    'file-loader',
+                    'webp-loader'
+                ]
+            },
+            {
+                test: /\.(jpg|png|svg|gif|webp)$/,
+                type: 'asset/resource',
             },
         ],
     },

@@ -3,9 +3,9 @@ import './Profession.scss'
 const Profession = () => {
     const [profession, setProfession] = useState<string>('');
     const listOfProfession = [
-        'Front-end developer',
-        'UI-designer',
-        'Freelancer',
+        'Front-end developer!',
+        'UI-designer!',
+        'Freelancer!',
     ]
     const [currentWordIndex, setCurrentWordIndex] = useState<number>(0);
     const blink = useRef() as React.MutableRefObject<HTMLSpanElement>

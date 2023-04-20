@@ -19,10 +19,11 @@ header div {
   z-index: 2;
 }
 header div h1 {
-  font-size: 2rem;
+  font-size: var(--bigestSize);
 }
 header div p {
-  font-size: 1.5rem;
+  margin-top: var(--step);
+  font-size: var(--bigSize);
 }
 
 /*# sourceMappingURL=header.css.map */

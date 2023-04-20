@@ -1,6 +1,6 @@
 .profession {
-  border-bottom: 3px solid lightseagreen;
-  padding-bottom: 4px;
+  border-bottom: 3px solid var(--themeColor);
+  padding-bottom: var(--step);
 }
 
 .blinking {

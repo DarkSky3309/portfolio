@@ -17,10 +17,11 @@ header{
   div{
     z-index: 2;
     h1{
-      font-size: 2rem;
+      font-size: var(--bigestSize);
     }
     p{
-      font-size: 1.5rem;
+      margin-top: var(--step);
+      font-size: var(--bigSize);
     }
   }
 }

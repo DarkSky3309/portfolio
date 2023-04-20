@@ -65,4 +65,15 @@ a {
   --step: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  font-size: var(--bigerSize);
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--themeColor);
+  width: max-content;
+}
+
 /*# sourceMappingURL=index.css.map */

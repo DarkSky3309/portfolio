@@ -5,7 +5,7 @@ import './header.scss'
 const Header = () => {
 
     return (
-        <header style={{backgroundImage: `url("${image}")`}}>
+        <header id={'home'} style={{backgroundImage: `url("${image}")`}}>
             <div>
                 <h1>Hi, This is Igor Shevchenko</h1>
                 <Profession/>

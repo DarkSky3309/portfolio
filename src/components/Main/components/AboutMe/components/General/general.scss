@@ -1,19 +1,14 @@
-.aboutMe {
-  h3 {
-    font-size: var(--bigerSize);
-    padding-bottom: 5px;
-    border-bottom: 4px solid var(--themeColor);
-    width: max-content;
-  }
+.aboutMe__general {
+
 
   p {
     margin: calc(3 * var(--step)) 0;
     color: slategray;
   }
 
-  .aboutMe__main {
+  .general__main {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 
     img {
       width: min(300px, 40%);
@@ -21,7 +16,7 @@
       object-fit: cover;
     }
 
-    .aboutMe__main-info {
+    .general__main-info {
       h2 {
         font-size: var(--bigerSize);
         color: var(--themeColor);
@@ -31,7 +26,7 @@
         margin: unset;
         margin-top: 10px;
       }
-      .aboutMe__main-facts{
+      .general__main-facts{
         margin-top: 20px;
         ul{
           columns: 2;

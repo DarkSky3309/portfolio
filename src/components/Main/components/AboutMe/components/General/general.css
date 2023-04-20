@@ -1,0 +1,38 @@
+.aboutMe__general p {
+  margin: calc(3 * var(--step)) 0;
+  color: slategray;
+}
+.aboutMe__general .general__main {
+  display: flex;
+  gap: 20px;
+}
+.aboutMe__general .general__main img {
+  width: min(300px, 40%);
+  height: auto;
+  object-fit: cover;
+}
+.aboutMe__general .general__main .general__main-info h2 {
+  font-size: var(--bigerSize);
+  color: var(--themeColor);
+}
+.aboutMe__general .general__main .general__main-info p {
+  margin: unset;
+  margin-top: 10px;
+}
+.aboutMe__general .general__main .general__main-info .general__main-facts {
+  margin-top: 20px;
+}
+.aboutMe__general .general__main .general__main-info .general__main-facts ul {
+  columns: 2;
+}
+.aboutMe__general .general__main .general__main-info .general__main-facts ul li {
+  margin-bottom: 20px;
+}
+.aboutMe__general .general__main .general__main-info .general__main-facts ul li i {
+  color: var(--themeColor);
+}
+.aboutMe__general .general__main .general__main-info .general__main-facts ul li .bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=general.css.map */

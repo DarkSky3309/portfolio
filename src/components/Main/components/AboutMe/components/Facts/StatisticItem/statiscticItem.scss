@@ -1,0 +1,26 @@
+.statistic-item {
+  display: grid;
+  grid-template-areas: 'image number'
+  'description description';
+  width: max-content;
+  align-items: center;
+  column-gap: 5px;
+  row-gap: 5px;
+  font-size: var(--mediumSize);
+  .number {
+    grid-area: number;
+    font-weight: bold;
+  }
+
+  i {
+    grid-area: image;
+    color: var(--themeColor);
+    text-align: end;
+    font-size: var(--bigestSize);
+  }
+
+  .description {
+    grid-area: description;
+  }
+}
+

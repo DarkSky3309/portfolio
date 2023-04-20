@@ -15,8 +15,8 @@ const Navigation = () => {
             </div>
             <nav>
                 <ul className={"aside__navigation"}>
-                    <li><a href=""><i className="ri-home-4-fill"></i>Home</a></li>
-                    <li><a href=""><i className="ri-user-fill"></i>About Me</a></li>
+                    <li><a href="#home"><i className="ri-home-4-fill"></i>Home</a></li>
+                    <li><a href="#about-me"><i className="ri-user-fill"></i>About Me</a></li>
                     <li><a href=""><i className="ri-briefcase-4-fill"></i>Portfolio</a></li>
                     <li><a href=""><i className="ri-server-fill"></i>Services</a></li>
                     <li><a href=""><i className="ri-mail-fill"></i>Contact</a></li>

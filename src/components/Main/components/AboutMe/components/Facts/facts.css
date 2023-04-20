@@ -1,0 +1,15 @@
+.aboutMe__facts {
+  margin-top: calc(6 * var(--step));
+}
+.aboutMe__facts p {
+  margin-top: calc(2 * var(--step));
+  color: slategray;
+}
+.aboutMe__facts .aboutMe__facts-statistic {
+  margin-top: calc(4 * var(--step));
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=facts.css.map */

@@ -1,6 +1,6 @@
 import React from 'react';
 import Profession from "./component/Profession/Profession";
-import image from './../../assets/image.webp'
+import image from '../../assets/bc-image.webp'
 import './header.scss'
 const Header = () => {
 

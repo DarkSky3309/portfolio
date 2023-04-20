@@ -1,4 +1,4 @@
-header{
+header {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -6,7 +6,11 @@ header{
   align-items: center;
   color: whitesmoke;
   position: relative;
-  &:before{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
     background-color: #000000AA;
     content: '';
     width: 100%;
@@ -14,12 +18,15 @@ header{
     position: absolute;
     z-index: 1;
   }
-  div{
+
+  div {
     z-index: 2;
-    h1{
+
+    h1 {
       font-size: var(--bigestSize);
     }
-    p{
+
+    p {
       margin-top: var(--step);
       font-size: var(--bigSize);
     }

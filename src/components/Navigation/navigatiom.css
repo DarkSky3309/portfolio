@@ -1,0 +1,37 @@
+aside {
+  position: fixed;
+  height: 100vh;
+  width: min(300px, 30%);
+  z-index: 2;
+  background-color: var(--sideBGColor);
+  color: var(--textColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+aside .aside__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+aside .aside__info img {
+  width: 130px;
+  border-radius: 50%;
+  border: 10px solid var(--iconBGColor);
+}
+aside .aside__info h3 {
+  font-size: var(--bigSize);
+}
+aside .aside__info i {
+  background-color: var(--iconBGColor);
+  padding: var(--step);
+  border-radius: 50%;
+  font-size: var(--mediumSize);
+}
+aside .aside__info i:not(last-of-type) {
+  margin-right: 7px;
+}
+
+/*# sourceMappingURL=navigatiom.css.map */

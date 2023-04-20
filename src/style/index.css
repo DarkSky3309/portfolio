@@ -45,11 +45,16 @@ table {
   border-spacing: 0;
 }
 
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
 :root {
   --sideBGColor: #040b14;
   --themeColor: #00A78E;
   --iconBGColor: #2C2F3F;
-  --textColor: #525252;
+  --textColor: whitesmoke;
   --bgColor: #F7F7F7;
   --bigestSize: 2rem;
   --bigerSize: 1.75rem;

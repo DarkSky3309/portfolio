@@ -24,14 +24,15 @@ aside .aside__info img {
 aside .aside__info h3 {
   font-size: var(--bigSize);
 }
+aside .aside__info a:not(:last-of-type) {
+  margin-right: 7px;
+}
 aside .aside__info i {
   background-color: var(--iconBGColor);
   padding: var(--step);
   border-radius: 50%;
   font-size: var(--mediumSize);
-}
-aside .aside__info i:not(last-of-type) {
-  margin-right: 7px;
+  transition: 0.2s;
 }
 aside .aside__info i:hover {
   color: var(--themeColor);
@@ -41,6 +42,9 @@ aside .aside__navigation {
   display: flex;
   gap: 15px;
   flex-direction: column;
+}
+aside .aside__navigation li {
+  transition: 0.2s;
 }
 aside .aside__navigation li:hover {
   color: var(--themeColor);

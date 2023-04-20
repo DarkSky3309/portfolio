@@ -1,0 +1,51 @@
+.aboutMe {
+  h3 {
+    font-size: var(--bigerSize);
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--themeColor);
+    width: max-content;
+  }
+
+  p {
+    margin: calc(3 * var(--step)) 0;
+    color: slategray;
+  }
+
+  .aboutMe__main {
+    display: flex;
+    gap: 10px;
+
+    img {
+      width: min(300px, 40%);
+      height: auto;
+      object-fit: cover;
+    }
+
+    .aboutMe__main-info {
+      h2 {
+        font-size: var(--bigerSize);
+        color: var(--themeColor);
+      }
+
+      p {
+        margin: unset;
+        margin-top: 10px;
+      }
+      .aboutMe__main-facts{
+        margin-top: 20px;
+        ul{
+          columns: 2;
+          li{
+            margin-bottom: 20px;
+            i{
+              color: var(--themeColor);
+            }
+            .bold{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

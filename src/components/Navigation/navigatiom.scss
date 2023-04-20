@@ -26,29 +26,39 @@ aside {
       font-size: var(--bigSize);
     }
 
+    a:not(:last-of-type) {
+      margin-right: 7px;
+    }
+
     i {
       background-color: var(--iconBGColor);
       padding: var(--step);
       border-radius: 50%;
       font-size: var(--mediumSize);
+      transition: .2s;
 
-      &:not(last-of-type) {
-        margin-right: 7px;
-      }
-      &:hover{
+      &:hover {
         color: var(--themeColor);
       }
     }
   }
-  .aside__navigation{
+
+  .aside__navigation {
     font-size: var(--mediumSize);
     display: flex;
     gap: 15px;
     flex-direction: column;
-    li:hover{
-      color: var(--themeColor);
+
+    li {
+      transition: .2s;
+
+      &:hover {
+        color: var(--themeColor);
+      }
     }
-    i{
+
+
+    i {
       margin-right: 15px;
     }
   }

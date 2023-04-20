@@ -1,0 +1,44 @@
+.aboutMe h3 {
+  font-size: var(--bigerSize);
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--themeColor);
+  width: max-content;
+}
+.aboutMe p {
+  margin: calc(3 * var(--step)) 0;
+  color: slategray;
+}
+.aboutMe .aboutMe__main {
+  display: flex;
+  gap: 10px;
+}
+.aboutMe .aboutMe__main img {
+  width: min(300px, 40%);
+  height: auto;
+  object-fit: cover;
+}
+.aboutMe .aboutMe__main .aboutMe__main-info h2 {
+  font-size: var(--bigerSize);
+  color: var(--themeColor);
+}
+.aboutMe .aboutMe__main .aboutMe__main-info p {
+  margin: unset;
+  margin-top: 10px;
+}
+.aboutMe .aboutMe__main .aboutMe__main-info .aboutMe__main-facts {
+  margin-top: 20px;
+}
+.aboutMe .aboutMe__main .aboutMe__main-info .aboutMe__main-facts ul {
+  columns: 2;
+}
+.aboutMe .aboutMe__main .aboutMe__main-info .aboutMe__main-facts ul li {
+  margin-bottom: 20px;
+}
+.aboutMe .aboutMe__main .aboutMe__main-info .aboutMe__main-facts ul li i {
+  color: var(--themeColor);
+}
+.aboutMe .aboutMe__main .aboutMe__main-info .aboutMe__main-facts ul li .bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=aboutMe.css.map */

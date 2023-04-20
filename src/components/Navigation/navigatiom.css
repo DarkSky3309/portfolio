@@ -33,5 +33,20 @@ aside .aside__info i {
 aside .aside__info i:not(last-of-type) {
   margin-right: 7px;
 }
+aside .aside__info i:hover {
+  color: var(--themeColor);
+}
+aside .aside__navigation {
+  font-size: var(--mediumSize);
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+aside .aside__navigation li:hover {
+  color: var(--themeColor);
+}
+aside .aside__navigation i {
+  margin-right: 15px;
+}
 
 /*# sourceMappingURL=navigatiom.css.map */

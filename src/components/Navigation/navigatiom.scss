@@ -35,7 +35,21 @@ aside {
       &:not(last-of-type) {
         margin-right: 7px;
       }
-
+      &:hover{
+        color: var(--themeColor);
+      }
+    }
+  }
+  .aside__navigation{
+    font-size: var(--mediumSize);
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    li:hover{
+      color: var(--themeColor);
+    }
+    i{
+      margin-right: 15px;
     }
   }
 }

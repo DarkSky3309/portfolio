@@ -1,12 +1,13 @@
-.profession {
+.header__description {
+  color: whitesmoke;
+}
+.header__description .profession {
   border-bottom: 3px solid var(--themeColor);
   padding-bottom: var(--step);
 }
-
-.blinking {
+.header__description .blinking {
   animation: blinking infinite 1000ms;
 }
-
 @keyframes blinking {
   0% {
     opacity: 0;

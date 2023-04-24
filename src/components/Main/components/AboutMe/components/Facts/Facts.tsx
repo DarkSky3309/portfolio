@@ -23,7 +23,7 @@ const Facts = () => {
     }
 
     return (
-        <div className={'aboutMe__facts'}>
+        <div className={'aboutMe__facts marginSection'}>
             <h3>Facts</h3>
             <p>As a web developer, my top priority is always my clients' satisfaction. I strive to understand their
                 needs and desires, and work hard to create websites that exceed their expectations. I believe that a

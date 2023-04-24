@@ -1,24 +1,27 @@
-.profession {
-  border-bottom: 3px solid var(--themeColor);
-  padding-bottom: var(--step);
+.header__description{
+  color: whitesmoke;
+  .profession {
+    border-bottom: 3px solid var(--themeColor);
+    padding-bottom: var(--step);
+  }
 
+  .blinking {
+    animation: blinking infinite 1000ms;
+  }
+
+  @keyframes blinking {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    51% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
 }
 
-.blinking {
-  animation: blinking infinite 1000ms;
-}
-
-@keyframes blinking {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  51% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100;
-  }
-}

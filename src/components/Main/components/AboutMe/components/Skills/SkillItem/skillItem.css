@@ -1,0 +1,17 @@
+.skill-item .skill-item-title {
+  font-size: var(--mediumSize);
+}
+.skill-item .skill-item-progressBar {
+  margin-top: 5px;
+  width: 100%;
+  background-color: #E7E7E7;
+  border-radius: 15px;
+}
+.skill-item .skill-item-progressBar .skill-item-bar {
+  background-color: var(--themeColor);
+  border-radius: 15px;
+  transition: 10ms;
+  height: 10px;
+}
+
+/*# sourceMappingURL=skillItem.css.map */

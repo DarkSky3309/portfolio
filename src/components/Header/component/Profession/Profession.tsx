@@ -34,7 +34,7 @@ const Profession = () => {
         setProfession('F')
     }, [])
     return (
-        <p>I'm a <span className={'profession'}>{profession}</span><span className={'blinking'} ref={blink}>|</span></p>
+        <p className={'header__description'}>I'm a <span className={'profession'}>{profession}</span><span className={'blinking'} ref={blink}>|</span></p>
     );
 };
 

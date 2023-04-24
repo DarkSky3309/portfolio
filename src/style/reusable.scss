@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--step) * 3)
+}
+
+.marginSection{
+  margin-top: calc(6 * var(--step));
+}

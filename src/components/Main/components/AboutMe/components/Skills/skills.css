@@ -1,0 +1,9 @@
+.aboutMe__skills .aboutMe__skills-my-skills {
+  margin-top: calc(var(--step) * 4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: min(40px, 10vw);
+  row-gap: calc(var(--step) * 3);
+}
+
+/*# sourceMappingURL=skills.css.map */

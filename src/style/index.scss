@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables";
+@import "reusable";
 
 html{
   scroll-behavior: smooth;
@@ -9,4 +10,7 @@ h3 {
   padding-bottom: 5px;
   border-bottom: 4px solid var(--themeColor);
   width: max-content;
+}
+p{
+  color: slategray;
 }

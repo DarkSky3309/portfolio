@@ -2,11 +2,11 @@
 
 
   p {
-    margin: calc(3 * var(--step)) 0;
     color: slategray;
   }
 
   .general__main {
+    margin-top: calc(var(--step) * 3);
     display: flex;
     gap: 20px;
 

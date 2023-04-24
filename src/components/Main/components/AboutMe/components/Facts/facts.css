@@ -1,6 +1,3 @@
-.aboutMe__facts {
-  margin-top: calc(6 * var(--step));
-}
 .aboutMe__facts p {
   margin-top: calc(2 * var(--step));
   color: slategray;

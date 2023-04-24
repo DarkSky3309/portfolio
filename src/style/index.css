@@ -65,6 +65,16 @@ a {
   --step: 5px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--step) * 3);
+}
+
+.marginSection {
+  margin-top: calc(6 * var(--step));
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -74,6 +84,10 @@ h3 {
   padding-bottom: 5px;
   border-bottom: 4px solid var(--themeColor);
   width: max-content;
+}
+
+p {
+  color: slategray;
 }
 
 /*# sourceMappingURL=index.css.map */

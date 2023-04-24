@@ -2,15 +2,14 @@ import React, {FC} from 'react';
 import './skillItem.scss'
 interface SkillProps{
     technology: string,
-    percent: number,
 }
 
-const SkillItem:FC<SkillProps> = ({technology, percent}) => {
+const SkillItem:FC<SkillProps> = ({technology}) => {
     return (
-        <div className={'skill-item'}>
+        <div className={`skill-item`}>
             <span className={'skill-item-title'}>{technology}</span>
             <div className={'skill-item-progressBar'}>
-                <div style={{width: `${percent}%`}} className={'skill-item-bar'}></div>
+                <div className={'skill-item-bar'}></div>
             </div>
         </div>
     );

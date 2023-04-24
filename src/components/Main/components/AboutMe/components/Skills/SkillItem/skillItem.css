@@ -13,5 +13,83 @@
   transition: 10ms;
   height: 10px;
 }
+.skill-item .to100 {
+  animation: to100;
+  animation-duration: 1s;
+  width: 100%;
+}
+.skill-item .to90 {
+  animation: to90;
+  animation-duration: 1s;
+  width: 90%;
+}
+.skill-item .to80 {
+  animation: to80;
+  animation-duration: 1s;
+  width: 80%;
+}
+.skill-item .to70 {
+  animation: to70;
+  animation-duration: 1s;
+  width: 70%;
+}
+.skill-item .to60 {
+  animation: to60;
+  animation-duration: 1s;
+  width: 60%;
+}
+.skill-item .to30 {
+  animation: to30;
+  animation-duration: 1s;
+  width: 30%;
+}
+@keyframes to100 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes to90 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes to80 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes to70 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes to60 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes to30 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
 
 /*# sourceMappingURL=skillItem.css.map */

@@ -1,18 +1,26 @@
 .statistic-item {
   display: grid;
-  grid-template-areas: "image number" "description description";
+  grid-template-areas: "title" "description";
   width: max-content;
   align-items: center;
+  justify-items: center;
   column-gap: 5px;
   row-gap: 5px;
   font-size: var(--mediumSize);
 }
+.statistic-item:last-of-type div {
+  align-items: end;
+}
+.statistic-item div {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .statistic-item .number {
-  grid-area: number;
   font-weight: bold;
 }
 .statistic-item i {
-  grid-area: image;
   color: var(--themeColor);
   text-align: end;
   font-size: var(--bigestSize);

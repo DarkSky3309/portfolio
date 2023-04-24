@@ -9,8 +9,10 @@ interface statisticProps {
 const StatisticItem:FC<statisticProps> = ({iClas, description, number}) => {
     return (
         <div className={'statistic-item'}>
-            <i className={iClas}></i>
-            <span className={'number'}>{number}</span>
+            <div>
+                <i className={iClas}></i>
+                <span className={'number'}>{number}</span>
+            </div>
             <span className={'description'}>{description}</span>
         </div>
     );

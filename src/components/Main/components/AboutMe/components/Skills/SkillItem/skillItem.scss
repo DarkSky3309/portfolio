@@ -14,4 +14,83 @@
       height: 10px;
     }
   }
+  .to100{
+    animation: to100;
+    animation-duration: 1s;
+    width: 100%;
+  }
+  .to90{
+    animation: to90;
+    animation-duration: 1s;
+    width: 90%;
+  }
+  .to80{
+    animation: to80;
+    animation-duration: 1s;
+    width: 80%;
+  }
+  .to70{
+    animation: to70;
+    animation-duration: 1s;
+    width: 70%;
+  }
+  .to60{
+    animation: to60;
+    animation-duration: 1s;
+    width: 60%;
+  }
+  .to30{
+    animation: to30;
+    animation-duration: 1s;
+    width: 30%;
+  }
+  @keyframes to100 {
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+
+  @keyframes to90 {
+    from{
+      width: 0;
+    }
+    to{
+      width: 90%;
+    }
+  }
+  @keyframes to80 {
+    from{
+      width: 0;
+      }
+    to{
+      width: 80%;
+    }
+  }
+  @keyframes to70 {
+    from{
+      width: 0;
+      }
+    to{
+      width: 70%;
+    }
+  }
+  @keyframes to60 {
+    from{
+      width: 0;
+    }
+    to{
+      width: 60%;
+    }
+  }
+  @keyframes to30 {
+    from{
+      width: 0;
+    }
+    to{
+      width: 30%;
+    }
+  }
 }

@@ -1,26 +1,46 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import SkillItem from "./SkillItem/SkillItem";
 import './skills.scss'
+import {Waypoint} from "react-waypoint";
 
 const Skills = () => {
+    const skillSection = useRef() as React.MutableRefObject<HTMLDivElement>
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const timer = (ms: number) => new Promise(res => setTimeout(res, ms))
+    const animateSkills = () => {
+        if (skillSection){
+            skillSection.current.children[0].children[1].children[0].classList.add('to100')
+            skillSection.current.children[1].children[1].children[0].classList.add('to90')
+            skillSection.current.children[2].children[1].children[0].classList.add('to80')
+            skillSection.current.children[3].children[1].children[0].classList.add('to70')
+            skillSection.current.children[4].children[1].children[0].classList.add('to80')
+            skillSection.current.children[5].children[1].children[0].classList.add('to60')
+            skillSection.current.children[6].children[1].children[0].classList.add('to30')
+            skillSection.current.children[7].children[1].children[0].classList.add('to80')
+
+        }
+        setIsLoaded(true)
+    }
+
     return (
         <div className={'aboutMe__skills marginSection'}>
             <div className="container">
                 <h3>Skills</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam beatae, deleniti
-                    deserunt doloremque ea et excepturi iure obcaecati odio possimus quod tempora! Accusantium, aliquam
-                    architecto, deserunt est facilis fuga ipsum omnis perferendis quaerat, reiciendis similique sunt totam
-                    veniam.</p>
+                <p>I always prioritize code quality, adhering to best development practices, and strive for high
+                    productivity and excellent results. I am open to learning new technologies and constantly improving
+                    my skills to remain competitive in the ever-evolving development market.</p>
             </div>
-            <div className={'aboutMe__skills-my-skills'}>
-                <SkillItem technology={'HTML'} percent={100}/>
-                <SkillItem technology={'CSS/SCSS'} percent={90}/>
-                <SkillItem technology={'JavaScript'} percent={80}/>
-                <SkillItem technology={'TypeScript'} percent={70}/>
-                <SkillItem technology={'React'} percent={80}/>
-                <SkillItem technology={'Redux'} percent={65}/>
-                <SkillItem technology={'NodeJs'} percent={30}/>
-                <SkillItem technology={'Figma'} percent={80}/>
+            <Waypoint onEnter={() => isLoaded ? '' : animateSkills()}/>
+            <div className={'aboutMe__skills-my-skills'} ref={skillSection}>
+                <SkillItem technology={'HTML'}/>
+                <SkillItem technology={'CSS/SCSS'}/>
+                <SkillItem technology={'JavaScript'}/>
+                <SkillItem technology={'TypeScript'}/>
+                <SkillItem technology={'React'}/>
+                <SkillItem technology={'Redux'}/>
+                <SkillItem technology={'NodeJs'}/>
+                <SkillItem technology={'Figma'}/>
             </div>
         </div>
     );

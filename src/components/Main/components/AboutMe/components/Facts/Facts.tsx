@@ -29,12 +29,13 @@ const Facts = () => {
                 needs and desires, and work hard to create websites that exceed their expectations. I believe that a
                 successful website should not only look great, but also be easy to maintain and update, which is why I
                 am committed to producing high-quality and easily maintainable code.</p>
+            <Waypoint onEnter={() => animationFinished ? ' ' : onEnter()} ref={waypoint}/>
             <div className={'aboutMe__facts-statistic'}>
-                <Waypoint onEnter={() => animationFinished ? ' ' : onEnter()} ref={waypoint}/>
                 <StatisticItem iClas={"ri-emotion-happy-line"} number={`${happyClient} +`} description={"Happy Client"}/>
                 <StatisticItem iClas={"ri-file-code-line"} number={`${projectCompleted} +`}
                                description={"Project Completed"}/>
                 <StatisticItem iClas={"ri-customer-service-2-line"} number={"24/7"} description={"Customer service"}/>
+                <StatisticItem iClas={"ri-english-input"} number={"C1"} description={"Level of English"}/>
             </div>
         </div>
     );

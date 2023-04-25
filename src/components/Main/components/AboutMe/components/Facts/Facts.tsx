@@ -24,11 +24,13 @@ const Facts = () => {
 
     return (
         <div className={'aboutMe__facts marginSection'}>
-            <h3>Facts</h3>
-            <p>As a web developer, my top priority is always my clients' satisfaction. I strive to understand their
-                needs and desires, and work hard to create websites that exceed their expectations. I believe that a
-                successful website should not only look great, but also be easy to maintain and update, which is why I
-                am committed to producing high-quality and easily maintainable code.</p>
+            <div className="container">
+                <h3>Facts</h3>
+                <p>As a web developer, my top priority is always my clients' satisfaction. I strive to understand their
+                    needs and desires, and work hard to create websites that exceed their expectations. I believe that a
+                    successful website should not only look great, but also be easy to maintain and update, which is why I
+                    am committed to producing high-quality and easily maintainable code.</p>
+            </div>
             <Waypoint onEnter={() => animationFinished ? ' ' : onEnter()} ref={waypoint}/>
             <div className={'aboutMe__facts-statistic'}>
                 <StatisticItem iClas={"ri-emotion-happy-line"} number={`${happyClient} +`} description={"Happy Client"}/>

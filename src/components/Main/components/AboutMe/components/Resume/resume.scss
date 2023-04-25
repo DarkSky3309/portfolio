@@ -1,0 +1,53 @@
+.aboutMe__resume-items{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+}
+
+.aboutMe__resume-item{
+  h4{
+    font-size: var(--bigSize);
+  }
+  .resume-item-content{
+    margin-top: calc(var(--step) * 2);
+    padding-left: 10px;
+    border-left: var(--themeColor) 3px solid;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &:after{
+      content: '';
+      width: 10px;
+      height: 10px;
+      border: var(--themeColor) 3px solid;
+      position: absolute;
+      top: -2px;
+      left: -8.5px;
+      border-radius: 50%;
+      background-color: whitesmoke;
+    }
+    h5{
+      font-size: var(--mediumSize);
+    }
+    p{
+      color: unset;
+    }
+    ul{
+      list-style: circle;
+      margin-left: 15px;
+      li:not(:last-child) {
+        margin-bottom: 7px;
+      }
+    }
+    .resume-item-time{
+      background-color: lightblue;
+      width: max-content;
+      padding: 10px 15px;
+      font-size: 1.075rem;
+      font-weight: 700;
+      border-radius: 5px;
+    }
+  }
+}

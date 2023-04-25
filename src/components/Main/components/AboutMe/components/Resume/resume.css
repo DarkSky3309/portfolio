@@ -1,0 +1,53 @@
+.aboutMe__resume-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+}
+
+.aboutMe__resume-item h4 {
+  font-size: var(--bigSize);
+}
+.aboutMe__resume-item .resume-item-content {
+  margin-top: calc(var(--step) * 2);
+  padding-left: 10px;
+  border-left: var(--themeColor) 3px solid;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutMe__resume-item .resume-item-content:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: var(--themeColor) 3px solid;
+  position: absolute;
+  top: -2px;
+  left: -8.5px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+.aboutMe__resume-item .resume-item-content h5 {
+  font-size: var(--mediumSize);
+}
+.aboutMe__resume-item .resume-item-content p {
+  color: unset;
+}
+.aboutMe__resume-item .resume-item-content ul {
+  list-style: circle;
+  margin-left: 15px;
+}
+.aboutMe__resume-item .resume-item-content ul li:not(:last-child) {
+  margin-bottom: 7px;
+}
+.aboutMe__resume-item .resume-item-content .resume-item-time {
+  background-color: lightblue;
+  width: max-content;
+  padding: 10px 15px;
+  font-size: 1.075rem;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=resume.css.map */

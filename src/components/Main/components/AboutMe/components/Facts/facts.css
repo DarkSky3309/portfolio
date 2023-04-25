@@ -1,7 +1,3 @@
-.aboutMe__facts p {
-  margin-top: calc(2 * var(--step));
-  color: slategray;
-}
 .aboutMe__facts .aboutMe__facts-statistic {
   margin-top: calc(4 * var(--step));
   display: flex;

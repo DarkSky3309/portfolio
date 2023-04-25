@@ -5,6 +5,12 @@
   column-gap: 20px;
 }
 
+.aboutMe__resume-item:last-of-type .resume-item-content {
+  margin-top: unset;
+}
+.aboutMe__resume-item:nth-of-type(2) .resume-item-content {
+  padding-bottom: 10px;
+}
 .aboutMe__resume-item h4 {
   font-size: var(--bigSize);
 }

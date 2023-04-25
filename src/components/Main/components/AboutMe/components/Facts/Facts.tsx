@@ -5,14 +5,14 @@ import {Waypoint} from "react-waypoint";
 
 const Facts = () => {
     const waypoint = useRef() as LegacyRef<Waypoint>
-    const [happyClient, setHappyClient] = useState<number>(14);
-    const [projectCompleted, setProjectCompleted] = useState<number>(20);
+    const [happyClient, setHappyClient] = useState<number>(20);
+    const [projectCompleted, setProjectCompleted] = useState<number>(24);
     const [animationFinished, setAnimationFinished] = useState(false);
     const timer = (ms: number) => new Promise(res => setTimeout(res, ms))
 
     const onEnter = () => {
         const animateNumbers = async (setArg: (arg: number) => void, arg: number) => {
-            for (let i = 5; i > 0; i--) {
+            for (let i = 8; i > 0; i--) {
                 setArg(Math.floor(arg / i))
                 await timer(150)
             }

@@ -18,7 +18,6 @@ const Skills = () => {
             skillSection.current.children[5].children[1].children[0].classList.add('to60')
             skillSection.current.children[6].children[1].children[0].classList.add('to30')
             skillSection.current.children[7].children[1].children[0].classList.add('to80')
-
         }
         setIsLoaded(true)
     }
@@ -42,6 +41,7 @@ const Skills = () => {
                 <SkillItem technology={'NodeJs'}/>
                 <SkillItem technology={'Figma'}/>
             </div>
+            <Waypoint onEnter={() => isLoaded ? '' : animateSkills()}/>
         </div>
     );
 };

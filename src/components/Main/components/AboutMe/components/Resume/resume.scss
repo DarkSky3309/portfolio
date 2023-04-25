@@ -6,6 +6,16 @@
 }
 
 .aboutMe__resume-item{
+  &:last-of-type{
+    .resume-item-content{
+      margin-top: unset;
+    }
+  }
+  &:nth-of-type(2){
+    .resume-item-content{
+      padding-bottom: 10px;
+    }
+  }
   h4{
     font-size: var(--bigSize);
   }
@@ -17,6 +27,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     &:after{
       content: '';
       width: 10px;

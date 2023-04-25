@@ -75,6 +75,10 @@ a {
   margin-top: calc(6 * var(--step));
 }
 
+:root {
+  font-size: 18px;
+}
+
 html {
   scroll-behavior: smooth;
 }

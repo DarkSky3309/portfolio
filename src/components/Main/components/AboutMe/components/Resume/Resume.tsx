@@ -1,5 +1,6 @@
 import React from 'react';
 import './resume.scss'
+import ResumeItem from "./ResumeItem/ResumeItem";
 
 const Resume = () => {
     return (
@@ -11,60 +12,52 @@ const Resume = () => {
                     at, cumque fuga impedit minima neque nostrum perspiciatis, qui, rem voluptas.</p>
             </div>
             <div className="aboutMe__resume-items marginSection">
-                <div className="aboutMe__resume-item">
-                    <h4>Summary</h4>
-                    <div className="resume-item-content">
-                        <h5>I Shevchenko</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda, atque
-                            doloribus exercitationem ipsam modi neque omnis quas tempora temporibus!</p>
-                        <ul>
-                            <li>https://t.me/Ig0r_Shevchenk0</li>
-                            <li>+380960091075</li>
-                            <li>igorshwebua@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="aboutMe__resume-item">
-                    <h4>Professional experience</h4>
-                    <div className="resume-item-content">
-                        <h5>Graphic Designer</h5>
-                        <span className="resume-item-time">
-                            2019-2020
-                        </span>
-                        <p>Freelance</p>
-                        <ul>
-                            <li>Make a logo design</li>
-                            <li>Create a pixel perfect design</li>
-                            <li>Work with an existing project</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="aboutMe__resume-item">
-                    <h4>Education</h4>
-                    <div className="resume-item-content">
-                        <h5>Master of Laws</h5>
-                        <span className="resume-item-time">
-                            2018-now
-                        </span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae illo ipsa minus molestias
-                            mollitia quis quo similique vitae. Dolores ducimus excepturi harum nam pariatur possimus
-                            quaerat quibusdam sequi veritatis?</p>
-                    </div>
-                </div>
-                <div className="aboutMe__resume-item">
-                    <div className="resume-item-content">
-                        <h5>Front-end Developer</h5>
-                        <span className="resume-item-time">
-                            2022-now
-                        </span>
-                        <p>Freelance</p>
-                        <ul>
-                            <li>Create a new web application</li>
-                            <li>Fix issues in an existing project</li>
-                            <li>Improving an existing project</li>
-                        </ul>
-                    </div>
-                </div>
+                <ResumeItem
+                    title="Summary"
+                >
+                    <h5>Igor Shevchenko</h5>
+                    <p>I am highly productive and dedicated to achieving my goals. I consistently work hard to meet
+                        deadlines and exceed expectations, and I am always looking for ways to improve and streamline my
+                        processes.</p>
+                    <ul>
+                        <li>https://t.me/Ig0r_Shevchenk0</li>
+                        <li>+380960091075</li>
+                        <li>igorshwebua@gmail.com</li>
+                    </ul>
+                </ResumeItem>
+                <ResumeItem
+                    title="Professional experience"
+                    subTitle="Graphic Designer"
+                    time="2019 - 2020"
+                    company="Freelance"
+                >
+                    <ul>
+                        <li>Make a logo design</li>
+                        <li>Create a pixel perfect design</li>
+                        <li>Work with an existing project</li>
+                    </ul>
+                </ResumeItem>
+
+                <ResumeItem
+                    title="Education"
+                    subTitle="Master of Laws in National V.N. Karazin University"
+                    time="2018 - present"
+                >
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae illo ipsa minus molestias
+                        mollitia quis quo similique vitae. Dolores ducimus excepturi harum nam pariatur possimus quaerat
+                        quibusdam sequi veritatis?</p>
+                </ResumeItem>
+                <ResumeItem
+                    subTitle="Front-end Developer"
+                    time="2022 - present"
+                    company="Freelance"
+                >
+                    <ul>
+                        <li>Create a new web application</li>
+                        <li>Fix issues in an existing project</li>
+                        <li>Improving an existing project</li>
+                    </ul>
+                </ResumeItem>
             </div>
         </div>
     );

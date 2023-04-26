@@ -11,6 +11,9 @@
 .aboutMe__resume-item:nth-of-type(2) .resume-item-content {
   padding-bottom: 10px;
 }
+.aboutMe__resume-item:first-of-type .resume-item-content {
+  margin-bottom: 10px;
+}
 .aboutMe__resume-item h4 {
   font-size: var(--bigSize);
 }
@@ -48,7 +51,8 @@
   margin-bottom: 7px;
 }
 .aboutMe__resume-item .resume-item-content .resume-item-time {
-  background-color: lightblue;
+  background-color: var(--themeColor);
+  color: whitesmoke;
   width: max-content;
   padding: 10px 15px;
   font-size: 1.075rem;

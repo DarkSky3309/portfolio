@@ -16,6 +16,11 @@
       padding-bottom: 10px;
     }
   }
+  &:first-of-type{
+    .resume-item-content{
+      margin-bottom: 10px;
+    }
+  }
   h4{
     font-size: var(--bigSize);
   }
@@ -53,7 +58,8 @@
       }
     }
     .resume-item-time{
-      background-color: lightblue;
+      background-color: var(--themeColor);
+      color: whitesmoke;
       width: max-content;
       padding: 10px 15px;
       font-size: 1.075rem;

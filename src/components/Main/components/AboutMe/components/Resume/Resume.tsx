@@ -1,16 +1,13 @@
 import React from 'react';
 import './resume.scss'
 import ResumeItem from "./ResumeItem/ResumeItem";
+import TitleComponent from "../../../TitleCompoent/TitleComponent";
 
 const Resume = () => {
     return (
         <div className={'marginSection aboutMe__resume'}>
-            <div className="container">
-                <h3>Resume</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugiat hic laboriosam libero suscipit?
-                    Aliquid dolores est facere hic nam saepe sunt, temporibus. Dicta et mollitia vel. Aperiam architecto
-                    at, cumque fuga impedit minima neque nostrum perspiciatis, qui, rem voluptas.</p>
-            </div>
+            <TitleComponent title={'Resume'}
+                            text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugiat hic laboriosam libero suscipit? Aliquid dolores est facere hic nam saepe sunt, temporibus. Dicta et mollitia vel. Aperiam architecto at, cumque fuga impedit minima neque nostrum perspiciatis, qui, rem voluptas.'}/>
             <div className="aboutMe__resume-items marginSection">
                 <ResumeItem
                     title="Summary"
@@ -27,8 +24,8 @@ const Resume = () => {
                 </ResumeItem>
                 <ResumeItem
                     title="Professional experience"
-                    subTitle="Graphic Designer"
-                    time="2019 - 2020"
+                    subTitle="Front-end developer"
+                    time="2021 - 2021"
                     company="Freelance"
                 >
                     <ul>
@@ -49,13 +46,14 @@ const Resume = () => {
                 </ResumeItem>
                 <ResumeItem
                     subTitle="Front-end Developer"
-                    time="2022 - present"
-                    company="Freelance"
+                    time="2022 - 2023"
+                    company="RightFusion"
                 >
                     <ul>
-                        <li>Create a new web application</li>
+                        <li>Create a new complex web application</li>
                         <li>Fix issues in an existing project</li>
                         <li>Improving an existing project</li>
+                        <li>Work with REST API</li>
                     </ul>
                 </ResumeItem>
             </div>

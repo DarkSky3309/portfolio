@@ -33,7 +33,7 @@ const General = () => {
                                 className="ri-arrow-right-s-line"></i> Freelance:</span> available
                             </li>
                             <li><span className={'bold'}><i
-                                className="ri-arrow-right-s-line"></i> Experience:</span> more than 1 year of freelance
+                                className="ri-arrow-right-s-line"></i> Experience:</span> more than 1 year
                             </li>
                         </ul>
                     </div>

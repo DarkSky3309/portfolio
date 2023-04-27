@@ -1,7 +1,7 @@
 @import "reset";
 @import "variables";
 @import "reusable";
-
+@import "fonts";
 :root{
   font-size: 18px;
 }
@@ -17,4 +17,5 @@ h3 {
 }
 p{
   color: slategray;
+  line-height: 130%
 }

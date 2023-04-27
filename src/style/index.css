@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Ubuntu:wght@400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,6 +76,14 @@ a {
   margin-top: calc(6 * var(--step));
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-family: "Bruno Ace";
+}
+
 :root {
   font-size: 18px;
 }
@@ -92,6 +101,7 @@ h3 {
 
 p {
   color: slategray;
+  line-height: 130%;
 }
 
 /*# sourceMappingURL=index.css.map */

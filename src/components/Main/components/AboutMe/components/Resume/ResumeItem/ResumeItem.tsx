@@ -16,7 +16,7 @@ const ResumeItem:FC<ResumeItemProps> = ({ title, subTitle, time, company, childr
             <div className="resume-item-content">
                 {subTitle && <h5>{subTitle}</h5>}
                 {time && <span className="resume-item-time">{time}</span>}
-                {company && <p>{company}</p>}
+                {company && <p className={'company'}>{company}</p>}
                 {children}
             </div>
         </div>

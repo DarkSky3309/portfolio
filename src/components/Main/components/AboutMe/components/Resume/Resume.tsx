@@ -25,13 +25,13 @@ const Resume = () => {
                 <ResumeItem
                     title="Professional experience"
                     subTitle="Front-end developer"
-                    time="2021 - 2021"
+                    time="September 2021 - December 2021"
                     company="Freelance"
                 >
                     <ul>
-                        <li>Make a logo design</li>
-                        <li>Create a pixel perfect design</li>
-                        <li>Work with an existing project</li>
+                        <li>Creating landing pages</li>
+                        <li>Working with existing projects</li>
+                        <li>Fixing critical bugsasd</li>
                     </ul>
                 </ResumeItem>
 
@@ -40,23 +40,34 @@ const Resume = () => {
                     subTitle="Master of Laws in National V.N. Karazin University"
                     time="2018 - present"
                 >
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae illo ipsa minus molestias
-                        mollitia quis quo similique vitae. Dolores ducimus excepturi harum nam pariatur possimus quaerat
-                        quibusdam sequi veritatis?</p>
+                    <p>Although I studied law, I have always been passionate about programming and spent more time
+                        pursuing it. Over time, my interest in programming grew stronger, and I found myself dedicating more
+                        and more time to it, even while pursuing my legal studies. While my legal education has been
+                        valuable, my heart is in programming, and I am excited to pursue a career in this field where I
+                        can apply my skills and creativity to build innovative solutions.</p>
                 </ResumeItem>
                 <ResumeItem
-                    subTitle="Front-end Developer"
-                    time="2022 - 2023"
+                    time="February 2022 - December 2022"
                     company="RightFusion"
                 >
                     <ul>
-                        <li>Create a new complex web application</li>
-                        <li>Fix issues in an existing project</li>
-                        <li>Improving an existing project</li>
-                        <li>Work with REST API</li>
+                        <li>Building and maintaining user interfaces using React</li>
+                        <li>Ensuring cross-browser compatibility and accessibility</li>
+                        <li>Keeping up-to-date with the latest web development trends and technologies</li>
+                        <li>Collaborating with back-end and work with REST API</li>
                     </ul>
                 </ResumeItem>
+                <ResumeItem
+                    time="2023 - present"
+                    company="Freelance">
+                    <ul>
+                        <li>Building and maintaining websites using React</li>
+                        <li>Writing TypeScript and JavaScript code</li>
+                        <li>Collaborating with clients</li>
+                        </ul>
+                </ResumeItem>
             </div>
+
         </div>
     );
 };

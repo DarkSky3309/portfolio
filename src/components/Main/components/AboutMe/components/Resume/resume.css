@@ -8,8 +8,12 @@
 .aboutMe__resume-item:last-of-type .resume-item-content {
   margin-top: unset;
 }
-.aboutMe__resume-item:nth-of-type(2) .resume-item-content {
-  padding-bottom: 10px;
+.aboutMe__resume-item:nth-of-type(2n):not(:last-of-type) .resume-item-content {
+  padding-bottom: 13px;
+  height: 100%;
+}
+.aboutMe__resume-item:nth-of-type(3) {
+  grid-row: 2/4;
 }
 .aboutMe__resume-item:first-of-type .resume-item-content {
   margin-bottom: 10px;
@@ -48,7 +52,7 @@
   margin-left: 15px;
 }
 .aboutMe__resume-item .resume-item-content ul li:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 .aboutMe__resume-item .resume-item-content .resume-item-time {
   background-color: var(--themeColor);
@@ -58,6 +62,11 @@
   font-size: 1.075rem;
   font-weight: 700;
   border-radius: 5px;
+}
+.aboutMe__resume-item .resume-item-content .company {
+  border-bottom: 2px solid var(--themeColor);
+  width: max-content;
+  padding-bottom: 2px;
 }
 
 /*# sourceMappingURL=resume.css.map */

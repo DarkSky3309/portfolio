@@ -11,6 +11,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Bruno Ace";
 }
 header:before {
   background-color: rgba(0, 0, 0, 0.6666666667);

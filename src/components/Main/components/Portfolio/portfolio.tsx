@@ -1,10 +1,13 @@
 import React from "react";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 import image from "./../../../../assets/bc-image.webp";
-import './porfolio.scss'
+import "./porfolio.scss";
+import {Waypoint} from "react-waypoint";
+
 const Portfolio = () => {
   return (
-    <section className={"marginSection portfolio"} id={'portfolio'}>
+    <section className={"marginSection portfolio"} id={"portfolio"}>
+      <Waypoint onEnter={() => {window.location.replace('/#portfolio')}}/>
       <div className="container">
         <h3>Portfolio</h3>
         <p>
@@ -22,27 +25,32 @@ const Portfolio = () => {
           title={"Instant messaging"}
           description={"lorem"}
           link={""}
-        /><PortfolioItem
+        />
+        <PortfolioItem
           prevImage={image}
           title={"Instant messaging"}
           description={"lorem"}
           link={""}
-        /><PortfolioItem
+        />
+        <PortfolioItem
           prevImage={image}
           title={"Instant messaging"}
           description={"lorem"}
           link={""}
-        /><PortfolioItem
+        />
+        <PortfolioItem
           prevImage={image}
           title={"Instant messaging"}
           description={"lorem"}
           link={""}
-        /><PortfolioItem
+        />
+        <PortfolioItem
           prevImage={image}
           title={"Instant messaging"}
           description={"lorem"}
           link={""}
-        /><PortfolioItem
+        />
+        <PortfolioItem
           prevImage={image}
           title={"Instant messaging"}
           description={"lorem"}

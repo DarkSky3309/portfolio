@@ -63,3 +63,9 @@ aside {
     }
   }
 }
+
+.active{
+  a{
+    color: var(--themeColor)
+  }
+}

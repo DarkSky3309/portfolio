@@ -53,4 +53,8 @@ aside .aside__navigation i {
   margin-right: 15px;
 }
 
+.active a {
+  color: var(--themeColor);
+}
+
 /*# sourceMappingURL=navigatiom.css.map */

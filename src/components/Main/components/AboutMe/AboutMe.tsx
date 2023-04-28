@@ -3,10 +3,12 @@ import General from "./components/General/General";
 import Facts from "./components/Facts/Facts";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";
+import {Waypoint} from "react-waypoint";
 
 const AboutMe = () => {
     return (
         <section className={'aboutMe'} id={'about-me'}>
+            <Waypoint onEnter={() => {window.location.replace('/#about-me')}}/>
             <General/>
             <Facts/>
             <Skills/>

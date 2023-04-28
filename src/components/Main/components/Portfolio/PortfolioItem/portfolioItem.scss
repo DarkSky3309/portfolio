@@ -26,14 +26,17 @@
     background-color: var(--themeColor);
     scale: 0;
     transition: 0.5s;
-    span{
+
+    span {
       font-weight: 700;
       font-size: var(--bigSize);
     }
-    p{
+
+    p {
       color: whitesmoke;
     }
-    a{
+
+    a {
       padding: 5px;
       background-color: whitesmoke;
       color: var(--themeColor);

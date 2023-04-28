@@ -19,6 +19,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({
       <div className={'item__modal'}>
         <span>{title}</span>
         <p>{description}</p>
+        <a href={link}><i className="ri-external-link-line"></i></a>
       </div>
     </div>
   );

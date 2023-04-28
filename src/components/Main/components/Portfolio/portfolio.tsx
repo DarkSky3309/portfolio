@@ -22,6 +22,31 @@ const Portfolio = () => {
           title={"Instant messaging"}
           description={"lorem"}
           link={""}
+        /><PortfolioItem
+          prevImage={image}
+          title={"Instant messaging"}
+          description={"lorem"}
+          link={""}
+        /><PortfolioItem
+          prevImage={image}
+          title={"Instant messaging"}
+          description={"lorem"}
+          link={""}
+        /><PortfolioItem
+          prevImage={image}
+          title={"Instant messaging"}
+          description={"lorem"}
+          link={""}
+        /><PortfolioItem
+          prevImage={image}
+          title={"Instant messaging"}
+          description={"lorem"}
+          link={""}
+        /><PortfolioItem
+          prevImage={image}
+          title={"Instant messaging"}
+          description={"lorem"}
+          link={""}
         />
       </div>
     </section>

@@ -1,19 +1,23 @@
 .portfolio__item {
-  width: 30%;
-  height: 50%;
+  width: 100%;
+  height: 20vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  color: whitesmoke;
 
   &:hover {
     .item__modal {
-      animation: hover 1s;
       scale: 1;
     }
   }
 
   .item__modal {
+    box-sizing: border-box;
+    padding: 20px 0;
+    text-align: center;
     display: flex;
+    gap: 5px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -22,5 +26,19 @@
     background-color: var(--themeColor);
     scale: 0;
     transition: 0.5s;
+    span{
+      font-weight: 700;
+      font-size: var(--bigSize);
+    }
+    p{
+      color: whitesmoke;
+    }
+    a{
+      padding: 5px;
+      background-color: whitesmoke;
+      color: var(--themeColor);
+      border-radius: 50%;
+      font-size: var(--mediumSize);
+    }
   }
 }

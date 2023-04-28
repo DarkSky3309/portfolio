@@ -1,5 +1,10 @@
 .portfolio .portfolio__content {
-  height: 500px;
+  margin-top: calc(var(--step) * 3);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: calc(var(--step) * 3);
+  height: max-content;
+  width: 100%;
 }
 
 /*# sourceMappingURL=porfolio.css.map */

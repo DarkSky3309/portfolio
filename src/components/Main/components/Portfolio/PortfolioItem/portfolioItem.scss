@@ -1,0 +1,26 @@
+.portfolio__item {
+  width: 30%;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    .item__modal {
+      animation: hover 1s;
+      scale: 1;
+    }
+  }
+
+  .item__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--themeColor);
+    scale: 0;
+    transition: 0.5s;
+  }
+}

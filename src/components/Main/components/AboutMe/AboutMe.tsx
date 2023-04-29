@@ -12,6 +12,7 @@ const AboutMe = () => {
             <General/>
             <Facts/>
             <Skills/>
+            <Waypoint onEnter={() => {window.location.replace('/#about-me')}}/>
             <Resume/>
         </section>
     );

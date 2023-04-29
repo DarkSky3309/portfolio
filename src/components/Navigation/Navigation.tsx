@@ -1,23 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import myPhoto from "./../../assets/myPhoto.webp";
 import "./navigatiom.scss";
+import {useLocation} from "react-router-dom";
 
 const Navigation = () => {
+  const location = useLocation()
   const menuLinks = useRef() as React.MutableRefObject<HTMLUListElement>;
   useEffect(() => {
-    console.log(1)
-  }, [window.location]);
+    activeLink();
+  }, [location]);
   const activeLink = () => {
     let linksArray:HTMLElement[] = [].slice.call(menuLinks.current.children);
-    linksArray.map(e => {e.classList.remove('active')})
-    console.log(window.location.hash);
-    switch (window.location.hash) {
-      case '#home':
-        linksArray.map(e => e.id === 'home' ? e.classList.add('active') : '');
-      case '#about-me':
-        linksArray.map(e => e.id === 'about-me' ? e.classList.add('active') : '')
-      case '#portfolio':
-        linksArray.map(e => e.id === 'portfolio' ? e.classList.add('active') : '')
+    linksArray.map(e => {e.classList.remove('active')
+      console.log(e);});
+    if (location.hash === '#home') {
+      linksArray.map(e => e.id === 'home' ? e.classList.add('active') : '')
+    } else if (location.hash === '#about-me') {
+      linksArray.map(e => e.id === 'about-me' ? e.classList.add('active') : '')
+    } else if (location.hash === '#portfolio') {
+      linksArray.map(e => e.id === 'portfolio' ? e.classList.add('active') : '')
     }
   };
 
@@ -40,7 +41,7 @@ const Navigation = () => {
       </div>
       <nav>
         <ul className={"aside__navigation"} ref={menuLinks}>
-          <li id={"home"} className={'active'}>
+          <li id={"home"}>
             <a href="#home">
               <i className="ri-home-4-fill"></i>Home
             </a>

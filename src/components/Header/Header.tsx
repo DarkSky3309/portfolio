@@ -6,7 +6,7 @@ import {Waypoint} from "react-waypoint";
 const Header = () => {
 
     return (
-        <header id={'home'} style={{backgroundImage: `url("${image}")`}}>
+        <header id={'home-component'} style={{backgroundImage: `url("${image}")`}}>
             <Waypoint onEnter={() => {window.location.replace('/#home')}}/>
             <div>
                 <h1>Hi, This is Igor Shevchenko</h1>

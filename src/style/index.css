@@ -73,7 +73,11 @@ a {
 }
 
 .marginSection {
-  margin-top: calc(6 * var(--step));
+  margin-top: calc(8 * var(--step));
+}
+
+.marginMedium {
+  margin-top: calc(4 * var(--step));
 }
 
 body {
@@ -102,6 +106,10 @@ h3 {
 p {
   color: slategray;
   line-height: 130%;
+}
+
+i {
+  font-size: var(--bigSize);
 }
 
 /*# sourceMappingURL=index.css.map */

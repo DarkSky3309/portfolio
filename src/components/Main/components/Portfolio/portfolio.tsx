@@ -7,7 +7,7 @@ import TitleComponent from "../TitleCompoent/TitleComponent";
 
 const Portfolio = () => {
   return (
-    <section className={"marginSection portfolio"} id={"portfolio"}>
+    <section className={"marginSection portfolio"} id={"portfolio-component"}>
       <Waypoint
         onEnter={() => {
           window.location.replace("/#portfolio");

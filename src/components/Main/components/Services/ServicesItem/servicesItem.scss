@@ -1,0 +1,28 @@
+.services__item{
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  &:hover{
+    i{
+      background-color: whitesmoke;
+      color: var(--themeColor);
+    }
+  }
+  i{
+    background-color: var(--themeColor);
+    padding: 10px;
+    border-radius: 50%;
+    color: whitesmoke;
+    transition: 0.5s;
+
+  }
+  div{
+    h5{
+      font-size: var(--mediumSize);
+    }
+    p{
+      margin-top: 5px;
+    }
+  }
+
+}

@@ -11,14 +11,15 @@ const Navigation = () => {
   }, [location]);
   const activeLink = () => {
     let linksArray:HTMLElement[] = [].slice.call(menuLinks.current.children);
-    linksArray.map(e => {e.classList.remove('active')
-      console.log(e);});
+    linksArray.map(e => {e.classList.remove('active')});
     if (location.hash === '#home') {
-      linksArray.map(e => e.id === 'home' ? e.classList.add('active') : '')
+      linksArray.map(e => e.id === 'home-link' ? e.classList.add('active') : '')
     } else if (location.hash === '#about-me') {
-      linksArray.map(e => e.id === 'about-me' ? e.classList.add('active') : '')
+      linksArray.map(e => e.id === 'about-me-link' ? e.classList.add('active') : '')
     } else if (location.hash === '#portfolio') {
-      linksArray.map(e => e.id === 'portfolio' ? e.classList.add('active') : '')
+      linksArray.map(e => e.id === 'portfolio-link' ? e.classList.add('active') : '')
+    } else if (location.hash === '#services') {
+      linksArray.map(e => e.id === 'services-link' ? e.classList.add('active') : '')
     }
   };
 
@@ -41,23 +42,23 @@ const Navigation = () => {
       </div>
       <nav>
         <ul className={"aside__navigation"} ref={menuLinks}>
-          <li id={"home"}>
-            <a href="#home">
+          <li id={"home-link"}>
+            <a href="#home-component">
               <i className="ri-home-4-fill"></i>Home
             </a>
           </li>
-          <li id={"about-me"}>
-            <a href="#about-me">
+          <li id={"about-me-link"}>
+            <a href="#about-me-component">
               <i className="ri-user-fill"></i>About Me
             </a>
           </li>
-          <li id={"portfolio"}>
-            <a href="#portfolio">
+          <li id={"portfolio-link"}>
+            <a href="#portfolio-component">
               <i className="ri-briefcase-4-fill"></i>Portfolio
             </a>
           </li>
-          <li>
-            <a href="">
+          <li id={'services-link'}>
+            <a href="#services-component" >
               <i className="ri-server-fill"></i>Services
             </a>
           </li>

@@ -1,3 +1,24 @@
-
+.services__item {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.services__item:hover i {
+  background-color: whitesmoke;
+  color: var(--themeColor);
+}
+.services__item i {
+  background-color: var(--themeColor);
+  padding: 10px;
+  border-radius: 50%;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+.services__item div h5 {
+  font-size: var(--mediumSize);
+}
+.services__item div p {
+  margin-top: 5px;
+}
 
 /*# sourceMappingURL=servicesItem.css.map */

@@ -7,7 +7,7 @@ import {Waypoint} from "react-waypoint";
 
 const AboutMe = () => {
     return (
-        <section className={'aboutMe'} id={'about-me'}>
+        <section className={'aboutMe'} id={'about-me-component'}>
             <Waypoint onEnter={() => {window.location.replace('/#about-me')}}/>
             <General/>
             <Facts/>

@@ -5,5 +5,9 @@
 }
 
 .marginSection{
-  margin-top: calc(6 * var(--step));
+  margin-top: calc(8 * var(--step));
+}
+
+.marginMedium{
+  margin-top: calc(4 * var(--step));
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
-import image from "./../../../../assets/bc-image.webp";
+import todoPrev from "./../../../../assets/to list.webp";
+import chatPrev from "./../../../../assets/chat.webp";
+import wetherPrev from "./../../../../assets/Your weather API.webp";
 import "./porfolio.scss";
 import { Waypoint } from "react-waypoint";
 import TitleComponent from "../TitleCompoent/TitleComponent";
@@ -21,40 +23,22 @@ const Portfolio = () => {
       />
       <div className={"portfolio__content"}>
         <PortfolioItem
-          prevImage={image}
-          title={"Instant messaging"}
-          description={"lorem"}
-          link={""}
+          prevImage={todoPrev}
+          title={"ToDo-list"}
+          description={"Application in which you can create todo, mark them as executed, modify, sort and so on. This tasks will save even after reopening."}
+          link={"https://astounding-lamington-66ff6d.netlify.app/"}
         />
         <PortfolioItem
-          prevImage={image}
+          prevImage={chatPrev}
           title={"Instant messaging"}
-          description={"lorem"}
-          link={""}
+          description={"Application with authorization where you can communicate, share pictures with other users with minimal delay."}
+          link={"https://celebrated-choux-96fead.netlify.app/"}
         />
         <PortfolioItem
-          prevImage={image}
-          title={"Instant messaging"}
-          description={"lorem"}
-          link={""}
-        />
-        <PortfolioItem
-          prevImage={image}
-          title={"Instant messaging"}
-          description={"lorem"}
-          link={""}
-        />
-        <PortfolioItem
-          prevImage={image}
-          title={"Instant messaging"}
-          description={"lorem"}
-          link={""}
-        />
-        <PortfolioItem
-          prevImage={image}
-          title={"Instant messaging"}
-          description={"lorem"}
-          link={""}
+          prevImage={wetherPrev}
+          title={"Weather API"}
+          description={"The weather forecasting app, in real time, shows the weather forecast with the function of switching measurements, you can know what the weather is in your city with one button!"}
+          link={"https://gleeful-peony-54e730.netlify.app/"}
         />
       </div>
     </section>

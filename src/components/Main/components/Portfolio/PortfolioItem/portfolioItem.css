@@ -14,7 +14,7 @@
   padding: 20px 0;
   text-align: center;
   display: flex;
-  gap: 5px;
+  gap: 15px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -30,6 +30,7 @@
 }
 .portfolio__item .item__modal p {
   color: whitesmoke;
+  width: 80%;
 }
 .portfolio__item .item__modal a {
   padding: 5px;

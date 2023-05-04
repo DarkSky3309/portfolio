@@ -41,9 +41,9 @@ const Services = () => {
           ico={"ri-speed-up-fill"}
         />
         <ServicesItem
-          title={"test"}
-          description={"test"}
-          ico={"ri-briefcase-4-fill"}
+          title={"Be up-to-date"}
+          description={"In the fast-paced world of technology, being adaptable and open to learning new things is essential to stay competitive and relevant. I am open to learning and have a growth mindset "}
+          ico={"ri-git-repository-fill"}
         />
       </div>
     </section>

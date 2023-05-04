@@ -20,6 +20,8 @@ const Navigation = () => {
       linksArray.map(e => e.id === 'portfolio-link' ? e.classList.add('active') : '')
     } else if (location.hash === '#services') {
       linksArray.map(e => e.id === 'services-link' ? e.classList.add('active') : '')
+    } else if (location.hash === '#contact') {
+      linksArray.map(e => e.id === 'contact-link' ? e.classList.add('active') : '')
     }
   };
 
@@ -62,8 +64,8 @@ const Navigation = () => {
               <i className="ri-server-fill"></i>Services
             </a>
           </li>
-          <li>
-            <a href="">
+          <li id={'contact-link'}>
+            <a href="#contact-component">
               <i className="ri-mail-fill"></i>Contact
             </a>
           </li>

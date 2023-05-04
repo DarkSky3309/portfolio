@@ -1,0 +1,19 @@
+.footer__myContact-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: var(--mediumSize);
+}
+.footer__myContact-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer__myContact-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__myContact-item div p {
+  font-size: var(--regularSize);
+}
+
+/*# sourceMappingURL=myContactItem.css.map */

@@ -1,0 +1,17 @@
+.footer__myContact-item{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: var(--mediumSize);
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    p{
+      font-size: var(--regularSize);
+    }
+  }
+}

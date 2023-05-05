@@ -46,8 +46,10 @@ aside .aside__navigation {
 aside .aside__navigation li {
   transition: 0.2s;
 }
-aside .aside__navigation li:hover {
-  color: var(--themeColor);
+@media (pointer: fine), (pointer: none) {
+  aside .aside__navigation li:hover {
+    color: var(--themeColor);
+  }
 }
 aside .aside__navigation i {
   margin-right: 15px;

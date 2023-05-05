@@ -52,8 +52,10 @@ aside {
     li {
       transition: .2s;
 
-      &:hover {
-        color: var(--themeColor);
+      @media (pointer: fine), (pointer: none) {
+        &:hover {
+          color: var(--themeColor);
+        }
       }
     }
 

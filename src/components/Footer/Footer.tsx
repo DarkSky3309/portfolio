@@ -9,7 +9,7 @@ const Footer = () => {
         <footer id={'contact-component'}>
             <TitleComponent title={'Contact'} text={'I can always stay in touch with you via email or Telegram.  I understand that the success of any team relies heavily on clear and constant communication, which is why I always make it a point to stay accessible and responsive.'}/>
             <Waypoint onEnter={() => {window.location.replace('/#contact')}}/>
-            <div className={'footer__content'}>
+            <div className={'footer__content marginMedium'}>
                 <MyContact/>
                 <ContactForm/>
             </div>

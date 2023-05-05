@@ -4,8 +4,17 @@
   align-items: center;
   font-size: var(--mediumSize);
 }
+.footer__myContact-item:first-child {
+  margin-top: 20px;
+}
 .footer__myContact-item:not(:last-child) {
   margin-bottom: 20px;
+}
+.footer__myContact-item i {
+  color: var(--themeColor);
+  border: 3px solid var(--themeColor);
+  border-radius: 50%;
+  padding: 10px;
 }
 .footer__myContact-item div {
   display: flex;

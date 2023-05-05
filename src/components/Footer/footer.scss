@@ -2,4 +2,8 @@ footer{
   margin-left: min(30%, 300px);
   background-color: var(--bgColor);
   padding: calc(4 * var(--step));
+  .footer__content{
+    display: flex;
+    gap: calc(4 * var(--step));
+  }
 }

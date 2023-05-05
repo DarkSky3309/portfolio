@@ -31,13 +31,13 @@ const Navigation = () => {
         <img src={myPhoto} alt="my photo" />
         <h3>I. Shevchenko</h3>
         <div>
-          <a href="">
+          <a target={"_blank"} href="https://www.instagram.com/shevchenko._igor/?hl=en">
             <i className="ri-instagram-line"></i>
           </a>
-          <a href="">
+          <a target={"_blank"} href="https://t.me/Ig0r_Shevchenk0">
             <i className="ri-telegram-line"></i>
           </a>
-          <a href="">
+          <a target={"_blank"} href="https://www.linkedin.com/in/igor-shevchenko-22b88726a/">
             <i className="ri-linkedin-box-line"></i>
           </a>
         </div>

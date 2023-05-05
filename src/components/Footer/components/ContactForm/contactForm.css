@@ -34,6 +34,11 @@
   font-size: var(--bigSize);
   border: none;
   cursor: pointer;
+  transition: 0.5s;
+}
+.footer__contactForm form button:hover {
+  color: var(--themeColor);
+  background-color: white;
 }
 
 /*# sourceMappingURL=contactForm.css.map */

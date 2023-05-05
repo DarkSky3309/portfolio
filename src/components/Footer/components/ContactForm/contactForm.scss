@@ -32,6 +32,11 @@
       font-size: var(--bigSize);
       border: none;
       cursor: pointer;
+      transition: 0.5s;
+      &:hover{
+        color: var(--themeColor);
+        background-color: white;
+      }
     }
   }
 }

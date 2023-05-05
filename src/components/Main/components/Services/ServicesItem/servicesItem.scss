@@ -1,14 +1,16 @@
-.services__item{
+.services__item {
   display: flex;
   align-items: start;
   gap: 20px;
-  &:hover{
-    i{
+
+  &:hover {
+    i {
       background-color: whitesmoke;
       color: var(--themeColor);
     }
   }
-  i{
+
+  i {
     background-color: var(--themeColor);
     padding: 10px;
     border-radius: 50%;
@@ -16,11 +18,13 @@
     transition: 0.5s;
 
   }
-  div{
-    h5{
+
+  div {
+    h5 {
       font-size: var(--mediumSize);
     }
-    p{
+
+    p {
       margin-top: 5px;
     }
   }

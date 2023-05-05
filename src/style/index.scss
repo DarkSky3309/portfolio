@@ -2,23 +2,27 @@
 @import "variables";
 @import "reusable";
 @import "fonts";
-:root{
+
+:root {
   font-size: 18px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 h3 {
   font-size: var(--bigerSize);
   padding-bottom: 5px;
   border-bottom: 4px solid var(--themeColor);
   width: max-content;
 }
-p{
+
+p {
   color: slategray;
   line-height: 130%
 }
-i{
+
+i {
   font-size: var(--bigSize);
 }

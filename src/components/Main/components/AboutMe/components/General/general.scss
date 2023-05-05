@@ -26,16 +26,21 @@
         margin: unset;
         margin-top: 10px;
       }
-      .general__main-facts{
+
+      .general__main-facts {
         margin-top: 20px;
-        ul{
+
+        ul {
           columns: 2;
-          li{
+
+          li {
             margin-bottom: 20px;
-            i{
+
+            i {
               color: var(--themeColor);
             }
-            .bold{
+
+            .bold {
               font-weight: bold;
             }
           }

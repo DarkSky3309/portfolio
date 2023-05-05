@@ -1,95 +1,104 @@
-.skill-item{
-  .skill-item-title{
+.skill-item {
+  .skill-item-title {
     font-size: var(--mediumSize);
   }
-  .skill-item-progressBar{
+
+  .skill-item-progressBar {
     margin-top: 5px;
     width: 100%;
     background-color: #E7E7E7;
     border-radius: 15px;
-    .skill-item-bar{
+
+    .skill-item-bar {
       background-color: var(--themeColor);
       border-radius: 15px;
       transition: 10ms;
       height: 10px;
     }
   }
-  .to100{
+
+  .to100 {
     animation: to100;
     animation-duration: 1s;
     width: 100%;
   }
-  .to90{
+
+  .to90 {
     animation: to90;
     animation-duration: 1s;
     width: 90%;
   }
-  .to80{
+
+  .to80 {
     animation: to80;
     animation-duration: 1s;
     width: 80%;
   }
-  .to70{
+
+  .to70 {
     animation: to70;
     animation-duration: 1s;
     width: 70%;
   }
-  .to60{
+
+  .to60 {
     animation: to60;
     animation-duration: 1s;
     width: 60%;
   }
-  .to30{
+
+  .to30 {
     animation: to30;
     animation-duration: 1s;
     width: 30%;
   }
+
   @keyframes to100 {
-    from{
+    from {
       width: 0;
     }
-    to{
+    to {
       width: 100%;
     }
   }
 
   @keyframes to90 {
-    from{
+    from {
       width: 0;
     }
-    to{
+    to {
       width: 90%;
     }
   }
   @keyframes to80 {
-    from{
+    from {
       width: 0;
-      }
-    to{
+    }
+    to {
       width: 80%;
     }
   }
   @keyframes to70 {
-    from{
+    from {
       width: 0;
-      }
-    to{
+    }
+    to {
       width: 70%;
     }
   }
   @keyframes to60 {
-    from{
+    from {
       width: 0;
     }
-    to{
+    to {
       width: 60%;
     }
   }
   @keyframes to30 {
-    from{
+    from {
       width: 0;
     }
-    to{
+    to {
       width: 30%;
     }
   }

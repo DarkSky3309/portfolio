@@ -1,26 +1,30 @@
-.footer__myContact-item{
+.footer__myContact-item {
   display: flex;
   gap: 15px;
   align-items: center;
   font-size: var(--mediumSize);
-  &:first-child{
+
+  &:first-child {
     margin-top: 20px;
   }
-  &:not(:last-child){
+
+  &:not(:last-child) {
     margin-bottom: 20px;
   }
-  i{
+
+  i {
     color: var(--themeColor);
     border: 3px solid var(--themeColor);
     border-radius: 50%;
     padding: 10px;
   }
-  div{
+
+  div {
     display: flex;
     flex-direction: column;
     gap: 5px;
 
-    p{
+    p {
       font-size: var(--regularSize);
     }
   }

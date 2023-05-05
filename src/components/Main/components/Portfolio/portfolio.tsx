@@ -25,19 +25,25 @@ const Portfolio = () => {
         <PortfolioItem
           prevImage={todoPrev}
           title={"ToDo-list"}
-          description={"Application in which you can create todo, mark them as executed, modify, sort and so on. This tasks will save even after reopening."}
+          description={
+            "Application in which you can create todo, mark them as executed, modify, sort and so on. This tasks will save even after reopening."
+          }
           link={"https://astounding-lamington-66ff6d.netlify.app/"}
         />
         <PortfolioItem
           prevImage={chatPrev}
           title={"Instant messaging"}
-          description={"Application with authorization where you can communicate, share pictures with other users with minimal delay."}
+          description={
+            "Application with authorization where you can communicate, share pictures with other users with minimal delay."
+          }
           link={"https://celebrated-choux-96fead.netlify.app/"}
         />
         <PortfolioItem
           prevImage={wetherPrev}
           title={"Weather API"}
-          description={"The weather forecasting app, in real time, shows the weather forecast with the function of switching measurements, you can know what the weather is in your city with one button!"}
+          description={
+            "The weather forecasting app, in real time, shows the weather forecast with the function of switching measurements, you can know what the weather is in your city with one button!"
+          }
           link={"https://gleeful-peony-54e730.netlify.app/"}
         />
       </div>

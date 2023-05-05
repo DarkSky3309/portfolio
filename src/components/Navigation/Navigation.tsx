@@ -1,27 +1,39 @@
 import React, { useEffect, useRef } from "react";
 import myPhoto from "./../../assets/myPhoto.webp";
 import "./navigatiom.scss";
-import {useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navigation = () => {
-  const location = useLocation()
+  const location = useLocation();
   const menuLinks = useRef() as React.MutableRefObject<HTMLUListElement>;
   useEffect(() => {
     activeLink();
   }, [location]);
   const activeLink = () => {
-    let linksArray:HTMLElement[] = [].slice.call(menuLinks.current.children);
-    linksArray.map(e => {e.classList.remove('active')});
-    if (location.hash === '#home') {
-      linksArray.map(e => e.id === 'home-link' ? e.classList.add('active') : '')
-    } else if (location.hash === '#about-me') {
-      linksArray.map(e => e.id === 'about-me-link' ? e.classList.add('active') : '')
-    } else if (location.hash === '#portfolio') {
-      linksArray.map(e => e.id === 'portfolio-link' ? e.classList.add('active') : '')
-    } else if (location.hash === '#services') {
-      linksArray.map(e => e.id === 'services-link' ? e.classList.add('active') : '')
-    } else if (location.hash === '#contact') {
-      linksArray.map(e => e.id === 'contact-link' ? e.classList.add('active') : '')
+    let linksArray: HTMLElement[] = [].slice.call(menuLinks.current.children);
+    linksArray.map((e) => {
+      e.classList.remove("active");
+    });
+    if (location.hash === "#home") {
+      linksArray.map((e) =>
+        e.id === "home-link" ? e.classList.add("active") : ""
+      );
+    } else if (location.hash === "#about-me") {
+      linksArray.map((e) =>
+        e.id === "about-me-link" ? e.classList.add("active") : ""
+      );
+    } else if (location.hash === "#portfolio") {
+      linksArray.map((e) =>
+        e.id === "portfolio-link" ? e.classList.add("active") : ""
+      );
+    } else if (location.hash === "#services") {
+      linksArray.map((e) =>
+        e.id === "services-link" ? e.classList.add("active") : ""
+      );
+    } else if (location.hash === "#contact") {
+      linksArray.map((e) =>
+        e.id === "contact-link" ? e.classList.add("active") : ""
+      );
     }
   };
 
@@ -31,13 +43,19 @@ const Navigation = () => {
         <img src={myPhoto} alt="my photo" />
         <h3>I. Shevchenko</h3>
         <div>
-          <a target={"_blank"} href="https://www.instagram.com/shevchenko._igor/?hl=en">
+          <a
+            target={"_blank"}
+            href="https://www.instagram.com/shevchenko._igor/?hl=en"
+          >
             <i className="ri-instagram-line"></i>
           </a>
           <a target={"_blank"} href="https://t.me/Ig0r_Shevchenk0">
             <i className="ri-telegram-line"></i>
           </a>
-          <a target={"_blank"} href="https://www.linkedin.com/in/igor-shevchenko-22b88726a/">
+          <a
+            target={"_blank"}
+            href="https://www.linkedin.com/in/igor-shevchenko-22b88726a/"
+          >
             <i className="ri-linkedin-box-line"></i>
           </a>
         </div>
@@ -59,12 +77,12 @@ const Navigation = () => {
               <i className="ri-briefcase-4-fill"></i>Portfolio
             </a>
           </li>
-          <li id={'services-link'}>
-            <a href="#services-component" >
+          <li id={"services-link"}>
+            <a href="#services-component">
               <i className="ri-server-fill"></i>Services
             </a>
           </li>
-          <li id={'contact-link'}>
+          <li id={"contact-link"}>
             <a href="#contact-component">
               <i className="ri-mail-fill"></i>Contact
             </a>

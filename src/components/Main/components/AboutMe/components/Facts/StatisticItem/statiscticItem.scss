@@ -8,17 +8,20 @@
   column-gap: 5px;
   row-gap: 5px;
   font-size: var(--mediumSize);
-  &:last-of-type{
-    div{
+
+  &:last-of-type {
+    div {
       align-items: end;
     }
   }
-  div{
+
+  div {
     grid-area: title;
     display: flex;
     align-items: center;
     gap: 5px;
   }
+
   .number {
     font-weight: bold;
   }

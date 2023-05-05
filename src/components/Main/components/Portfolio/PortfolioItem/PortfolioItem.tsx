@@ -15,11 +15,16 @@ const PortfolioItem: FC<PortfolioItemProps> = ({
   description,
 }) => {
   return (
-    <div className={"portfolio__item"} style={{backgroundImage: `url(${prevImage})`}}>
-      <div className={'item__modal'}>
+    <div
+      className={"portfolio__item"}
+      style={{ backgroundImage: `url(${prevImage})` }}
+    >
+      <div className={"item__modal"}>
         <span>{title}</span>
         <p>{description}</p>
-        <a href={link} target={"_blank"}><i className="ri-external-link-line"></i></a>
+        <a href={link} target={"_blank"}>
+          <i className="ri-external-link-line"></i>
+        </a>
       </div>
     </div>
   );

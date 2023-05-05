@@ -1,34 +1,39 @@
-.aboutMe__resume-items{
+.aboutMe__resume-items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   column-gap: 20px;
 }
 
-.aboutMe__resume-item{
-  &:last-of-type{
-    .resume-item-content{
+.aboutMe__resume-item {
+  &:last-of-type {
+    .resume-item-content {
       margin-top: unset;
     }
   }
-  &:nth-of-type(2n):not(:last-of-type){
-    .resume-item-content{
+
+  &:nth-of-type(2n):not(:last-of-type) {
+    .resume-item-content {
       padding-bottom: 13px;
       height: 100%;
     }
   }
-  &:nth-of-type(3){
+
+  &:nth-of-type(3) {
     grid-row: 2 / 4;
   }
-  &:first-of-type{
-    .resume-item-content{
+
+  &:first-of-type {
+    .resume-item-content {
       margin-bottom: 10px;
     }
   }
-  h4{
+
+  h4 {
     font-size: var(--bigSize);
   }
-  .resume-item-content{
+
+  .resume-item-content {
     margin-top: calc(var(--step) * 2);
     padding-left: 10px;
     border-left: var(--themeColor) 3px solid;
@@ -37,7 +42,7 @@
     flex-direction: column;
     gap: 10px;
 
-    &:after{
+    &:after {
       content: '';
       width: 10px;
       height: 10px;
@@ -48,20 +53,25 @@
       border-radius: 50%;
       background-color: whitesmoke;
     }
-    h5{
+
+    h5 {
       font-size: var(--mediumSize);
     }
-    p{
+
+    p {
       color: unset;
     }
-    ul{
+
+    ul {
       list-style: circle;
       margin-left: 15px;
+
       li:not(:last-child) {
         margin-bottom: 10px;
       }
     }
-    .resume-item-time{
+
+    .resume-item-time {
       background-color: var(--themeColor);
       color: whitesmoke;
       width: max-content;
@@ -70,7 +80,8 @@
       font-weight: 700;
       border-radius: 5px;
     }
-    .company{
+
+    .company {
       border-bottom: 2px solid var(--themeColor);
       width: max-content;
       padding-bottom: 2px;

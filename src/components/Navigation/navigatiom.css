@@ -10,6 +10,12 @@ aside {
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 992px) {
+  aside {
+    display: none;
+    visibility: hidden;
+  }
+}
 aside .aside__info {
   display: flex;
   flex-direction: column;

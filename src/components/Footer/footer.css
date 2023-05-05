@@ -3,9 +3,19 @@ footer {
   background-color: var(--bgColor);
   padding: calc(4 * var(--step));
 }
+@media (max-width: 992px) {
+  footer {
+    margin-left: unset;
+  }
+}
 footer .footer__content {
   display: flex;
   gap: calc(4 * var(--step));
+}
+@media (max-width: 600px) {
+  footer .footer__content {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

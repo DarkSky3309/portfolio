@@ -1,18 +1,26 @@
 .footer__contactForm {
   width: 100%;
   background-color: white;
-  box-shadow: 0px 1px 10px lightgray;
+  box-shadow: 0 1px 10px lightgray;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer__contactForm form {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  gap: 20px;
   width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .footer__contactForm form {
+    height: unset;
+    padding-bottom: 10px;
+  }
 }
 .footer__contactForm form input, .footer__contactForm form textarea {
   padding: 15px 10px;

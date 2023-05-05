@@ -12,7 +12,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Bruno Ace";
-
+  @media (max-width: 992px) {
+    margin-left: unset;
+    width: 100%;
+  }
   &:before {
     background-color: #000000AA;
     content: '';
@@ -28,6 +31,7 @@ header {
 
     h1 {
       font-size: var(--bigestSize);
+      line-height: 150%;
     }
 
     p {

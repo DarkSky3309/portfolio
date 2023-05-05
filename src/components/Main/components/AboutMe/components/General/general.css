@@ -6,6 +6,12 @@
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .aboutMe__general .general__main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .aboutMe__general .general__main img {
   width: min(300px, 40%);
   height: auto;
@@ -25,8 +31,14 @@
 .aboutMe__general .general__main .general__main-info .general__main-facts ul {
   columns: 2;
 }
+@media (max-width: 768px) {
+  .aboutMe__general .general__main .general__main-info .general__main-facts ul {
+    columns: 1;
+  }
+}
 .aboutMe__general .general__main .general__main-info .general__main-facts ul li {
   margin-bottom: 20px;
+  line-height: 150%;
 }
 .aboutMe__general .general__main .general__main-info .general__main-facts ul li i {
   color: var(--themeColor);

@@ -9,6 +9,12 @@
     margin-top: calc(var(--step) * 3);
     display: flex;
     gap: 20px;
+    @media screen and (max-width: 768px) {
+      & {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
 
     img {
       width: min(300px, 40%);
@@ -32,9 +38,12 @@
 
         ul {
           columns: 2;
-
+          @media (max-width: 768px) {
+            columns: 1;
+          }
           li {
             margin-bottom: 20px;
+            line-height: 150%;
 
             i {
               color: var(--themeColor);

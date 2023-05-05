@@ -3,5 +3,10 @@ main {
   background-color: var(--bgColor);
   padding: calc(4 * var(--step));
 }
+@media (max-width: 992px) {
+  main {
+    margin-left: unset;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

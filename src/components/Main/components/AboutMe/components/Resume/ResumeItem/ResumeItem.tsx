@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import "./ResumeItem.scss";
 
 interface ResumeItemProps {
   title?: string;

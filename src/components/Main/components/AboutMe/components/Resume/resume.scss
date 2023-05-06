@@ -26,6 +26,7 @@
 
   &:nth-of-type(3) {
     grid-row: 2 / 4;
+    margin-top: 20px;
   }
 
   &:first-of-type {
@@ -36,6 +37,7 @@
 
   h4 {
     font-size: var(--bigSize);
+    margin-bottom: 15px;
   }
 
   .resume-item-content {

@@ -21,12 +21,14 @@
 }
 .aboutMe__resume-item:nth-of-type(3) {
   grid-row: 2/4;
+  margin-top: 20px;
 }
 .aboutMe__resume-item:first-of-type .resume-item-content {
   margin-bottom: 10px;
 }
 .aboutMe__resume-item h4 {
   font-size: var(--bigSize);
+  margin-bottom: 15px;
 }
 .aboutMe__resume-item .resume-item-content {
   margin-top: calc(var(--step) * 2);

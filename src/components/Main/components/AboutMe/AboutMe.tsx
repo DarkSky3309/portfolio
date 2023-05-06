@@ -7,7 +7,7 @@ import { Waypoint } from "react-waypoint";
 
 const AboutMe = () => {
   return (
-    <section className={"aboutMe"} id={"about-me-component"}>
+    <section className={"aboutMe marginMedium"} id={"about-me-component"}>
       <Waypoint
         onEnter={() => {
           window.location.replace("/#about-me");

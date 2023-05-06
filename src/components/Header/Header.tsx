@@ -3,6 +3,7 @@ import Profession from "./component/Profession/Profession";
 import image from "../../assets/bc-image.webp";
 import "./header.scss";
 import { Waypoint } from "react-waypoint";
+import ReactDOM from "react-dom/client";
 
 interface headerInterface {
   navigation: React.MutableRefObject<HTMLDivElement> | undefined

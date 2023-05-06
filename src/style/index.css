@@ -121,4 +121,16 @@ i {
   font-size: var(--bigSize);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sideBGColor);
+}
+
 /*# sourceMappingURL=index.css.map */

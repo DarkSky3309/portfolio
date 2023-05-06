@@ -1,10 +1,11 @@
-.open{
+.open {
   display: flex;
   visibility: visible;
   position: fixed;
   width: 100%;
   z-index: 3;
-  }
+}
+
 aside {
   position: fixed;
   height: 100vh;
@@ -21,6 +22,7 @@ aside {
     display: none;
     visibility: hidden;
   }
+
   .aside__info {
     display: flex;
     flex-direction: column;

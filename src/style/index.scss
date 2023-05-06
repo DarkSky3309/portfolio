@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   line-height: 125%;
 }
 
@@ -33,3 +33,16 @@ p {
 i {
   font-size: var(--bigSize);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sideBGColor);
+}
+

@@ -4,5 +4,18 @@
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 768px) {
+  .aboutMe__facts .aboutMe__facts-statistic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .aboutMe__facts .aboutMe__facts-statistic {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=facts.css.map */

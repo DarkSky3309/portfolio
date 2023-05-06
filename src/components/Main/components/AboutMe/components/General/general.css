@@ -17,6 +17,12 @@
   height: auto;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .aboutMe__general .general__main img {
+    min-height: 300px;
+    min-width: 300px;
+  }
+}
 .aboutMe__general .general__main .general__main-info h2 {
   font-size: var(--bigerSize);
   color: var(--themeColor);

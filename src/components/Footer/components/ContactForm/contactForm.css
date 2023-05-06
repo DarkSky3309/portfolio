@@ -2,13 +2,14 @@
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 10px lightgray;
-  padding: 10px 20px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer__contactForm form {
   padding-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,7 +20,6 @@
 @media (max-width: 600px) {
   .footer__contactForm form {
     height: unset;
-    padding-bottom: 10px;
   }
 }
 .footer__contactForm form input, .footer__contactForm form textarea {
@@ -36,7 +36,7 @@
   height: 40%;
 }
 .footer__contactForm form button {
-  padding: 20px;
+  padding: 15px;
   background-color: var(--themeColor);
   color: whitesmoke;
   font-size: var(--bigSize);

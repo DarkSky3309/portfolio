@@ -27,6 +27,12 @@
 }
 .statistic-item .description {
   grid-area: description;
+  font-size: var(--regularSize);
+}
+@media (max-width: 992px) {
+  .statistic-item .description {
+    font-size: var(--mediumSize);
+  }
 }
 
 /*# sourceMappingURL=statiscticItem.css.map */

@@ -4,6 +4,13 @@
   grid-template-rows: auto;
   column-gap: 20px;
 }
+@media (max-width: 768px) {
+  .aboutMe__resume-items {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    max-width: 600px;
+  }
+}
 
 .aboutMe__resume-item:last-of-type .resume-item-content {
   margin-top: unset;

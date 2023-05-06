@@ -4,5 +4,15 @@
   grid-gap: 10px;
   row-gap: 30px;
 }
+@media (max-width: 1200px) {
+  .services .services__items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .services .services__items {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=services.css.map */

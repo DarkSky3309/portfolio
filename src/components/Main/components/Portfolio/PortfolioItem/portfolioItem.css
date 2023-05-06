@@ -1,10 +1,9 @@
 .portfolio__item {
-  width: 100%;
-  height: 20vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: whitesmoke;
+  min-height: 300px;
 }
 .portfolio__item:hover .item__modal {
   scale: 1;

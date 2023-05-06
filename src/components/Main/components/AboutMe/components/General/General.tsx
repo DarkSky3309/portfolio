@@ -1,5 +1,4 @@
 import React from "react";
-import myPhoto from "../../../../../../assets/myPhoto.webp";
 import "./general.scss";
 import TitleComponent from "../../../TitleCompoent/TitleComponent";
 
@@ -13,7 +12,6 @@ const General = () => {
         }
       />
       <div className={"general__main"}>
-        <img src={myPhoto} alt="It's me" />
         <div className={"general__main-info"}>
           <div>
             <h2>Front-end Developer</h2>
@@ -26,10 +24,11 @@ const General = () => {
             <ul>
               <li>
                 <span className={"bold"}>
-                  <i className="ri-arrow-right-s-line"></i> Birthday:
+                  <i className="ri-arrow-right-s-line"></i> Email:
                 </span>{" "}
-                07.06.2001
+                igorshwebua@gmail.com
               </li>
+
               <li>
                 <span className={"bold"}>
                   <i className="ri-arrow-right-s-line"></i> Website:
@@ -45,7 +44,7 @@ const General = () => {
                 <span className={"bold"}>
                   <i className="ri-arrow-right-s-line"></i> City:
                 </span>{" "}
-                Ukraine, Kirovograd reg., Olexandria
+                Ukraine, Kharkiv
               </li>
               <li>
                 <span className={"bold"}>
@@ -55,9 +54,9 @@ const General = () => {
               </li>
               <li>
                 <span className={"bold"}>
-                  <i className="ri-arrow-right-s-line"></i> Email:
+                  <i className="ri-arrow-right-s-line"></i> Birthday:
                 </span>{" "}
-                igorshwebua@gmail.com
+                07.06.2001
               </li>
               <li>
                 <span className={"bold"}>

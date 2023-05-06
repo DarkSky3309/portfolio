@@ -8,8 +8,8 @@ const Main = () => {
   return (
     <main>
       <AboutMe />
-      {/*<Portfolio />*/}
-      {/*<Services />*/}
+      <Portfolio />
+      <Services />
     </main>
   );
 };

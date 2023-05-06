@@ -27,11 +27,17 @@ header {
 
   .menu{
     position: fixed;
+    display: none;
+    visibility: hidden;
     color: var(--themeColor);
     top: 20px;
     right: 20px;
     font-size: var(--bigestSize);
     z-index: 4;
+    @media (max-width: 992px) {
+      display: block;
+      visibility: visible;
+    }
   }
 
   div {

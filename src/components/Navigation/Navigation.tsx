@@ -47,9 +47,10 @@ const Navigation: FC<porps> = ({ set }) => {
   };
 
   const removeOpen = () => {
-    aside.current.classList.contains("open")
-      ? aside.current.classList.remove("open")
-      : "";
+    if(aside.current.classList.contains("open") ){
+      aside.current.classList.remove("open")
+      document.body.classList.remove('overflow')
+    }
   };
 
   return (

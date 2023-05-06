@@ -97,6 +97,10 @@ h1 {
   }
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }

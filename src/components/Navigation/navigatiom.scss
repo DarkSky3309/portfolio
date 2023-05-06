@@ -39,6 +39,7 @@ aside {
       font-size: var(--bigSize);
     }
 
+
     a:not(:last-of-type) {
       margin-right: 7px;
     }
@@ -81,6 +82,7 @@ aside {
 
 .active {
   a {
-    color: var(--themeColor)
+    color: var(--themeColor);
+    pointer-events: none;
   }
 }

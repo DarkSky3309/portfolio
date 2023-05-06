@@ -71,6 +71,7 @@ aside .aside__navigation i {
 
 .active a {
   color: var(--themeColor);
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=navigatiom.css.map */

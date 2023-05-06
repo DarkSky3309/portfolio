@@ -16,10 +16,10 @@ const Header:FC<headerInterface> = ({navigation}) => {
     if (navigation){
       if (navigation.current.classList.contains('open')){
         navigation.current.classList.remove('open')
-        document.body.style.overflow = 'unset'
+        document.body.classList.remove('overflow')
       } else {
         navigation.current.classList.add('open')
-        document.body.style.overflow = 'hidden'
+        document.body.classList.add('overflow')
 
       }
     }

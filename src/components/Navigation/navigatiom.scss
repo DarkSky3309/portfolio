@@ -1,3 +1,10 @@
+.open{
+  display: flex;
+  visibility: visible;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  }
 aside {
   position: fixed;
   height: 100vh;
@@ -9,6 +16,7 @@ aside {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
   @media (max-width: 992px) {
     display: none;
     visibility: hidden;

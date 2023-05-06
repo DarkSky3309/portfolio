@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './style/index.scss'
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
@@ -7,12 +7,13 @@ import Footer from "./components/Footer/Footer";
 import {BrowserRouter} from "react-router-dom";
 
 const App = () => {
+    const [navigation, setNavigation] = useState<React.MutableRefObject<HTMLDivElement>>();
     return (
         <>
             <BrowserRouter>
-                <Navigation/>
+                <Navigation set={setNavigation}/>
             </BrowserRouter>
-            <Header/>
+            <Header navigation={navigation}/>
             <Main/>
             <Footer/>
         </>

@@ -27,6 +27,14 @@ header:before {
   position: absolute;
   z-index: 1;
 }
+header .menu {
+  position: fixed;
+  color: var(--themeColor);
+  top: 20px;
+  right: 20px;
+  font-size: var(--bigestSize);
+  z-index: 4;
+}
 header div {
   padding-left: 10%;
   z-index: 2;

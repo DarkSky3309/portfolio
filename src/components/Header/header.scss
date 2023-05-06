@@ -25,6 +25,15 @@ header {
     z-index: 1;
   }
 
+  .menu{
+    position: fixed;
+    color: var(--themeColor);
+    top: 20px;
+    right: 20px;
+    font-size: var(--bigestSize);
+    z-index: 4;
+  }
+
   div {
     padding-left: 10%;
     z-index: 2;
